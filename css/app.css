@@ -1,0 +1,33 @@
+.panel {
+    position: relative;
+}
+
+.panel .been {
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url(../images/been.png) no-repeat;
+}
+
+.panel-body {
+    font-size: 12px;
+}
+
+.list .panel-body {
+}
+
+a {
+    color: #333;
+}
+
+a:hover {
+    color: #333;
+    text-decoration: none;
+}
+
+img {
+    margin: 0 5px 5px 0;
+    max-width: 100%;
+}
