@@ -1,4 +1,4 @@
-<div class="navbar navbar-inverse" role="navigation">
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
             <a class="navbar-brand" href="#">游玩——{{scene.sname}}</a>
@@ -6,35 +6,37 @@
     </div>
 </div>
 
-<div class="container">
-    <div class="col-md-12">
-        <div class="panel panel-default">
-            <div class="panel-heading">简介</div>
-            <div class="panel-body">
-                <div>
-                    <img ng-src="{{scene.pic_url}}" align="left" />
-                    <span ng-bind-html="scene.introduction | htmlFilter"></span>
+<div class="wrapper">
+    <div class="container">
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">简介</div>
+                <div class="panel-body">
+                    <div>
+                        <img ng-src="{{scene.pic_url}}" align="left" />
+                        <span ng-bind-html="scene.introduction | htmlFilter"></span>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="col-md-12">
-        <div class="panel panel-default">
-            <div class="panel-heading">门票和开放时间</div>
-            <div class="panel-body">
-                <div ng-hide="scene.tickets.length">无</div>
-                <div ng-repeat="ticket in scene.tickets">{{ticket}}</div>
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">门票和开放时间</div>
+                <div class="panel-body">
+                    <div ng-hide="scene.tickets.length">无</div>
+                    <div ng-repeat="ticket in scene.tickets">{{ticket}}</div>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="col-md-12">
-        <div class="panel panel-default">
-            <div class="panel-heading">交通</div>
-            <div class="panel-body">
-                <div ng-hide="scene.traffics.length">无</div>
-                <div ng-repeat="traffic in scene.traffics">
-                    <h5>{{traffic.name}}</h5>
-                    <div ng-bind-html="traffic.desc | htmlFilter"></div>
+        <div class="col-md-12">
+            <div class="panel panel-default">
+                <div class="panel-heading">交通</div>
+                <div class="panel-body">
+                    <div ng-hide="scene.traffics.length">无</div>
+                    <div ng-repeat="traffic in scene.traffics">
+                        <h5>{{traffic.name}}</h5>
+                        <div ng-bind-html="traffic.desc | htmlFilter"></div>
+                    </div>
                 </div>
             </div>
         </div>
