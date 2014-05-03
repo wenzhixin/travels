@@ -8,7 +8,7 @@
 
 <div class="wrapper">
     <div class="container list">
-        <div class="col-md-3" ng-repeat="scene in scenes">
+        <div class="col-md-3" ng-repeat="scene in scenes" sroll-restore-directive>
             <div class="panel panel-default">
                 <div class="been" ng-show="scene.been"></div>
                 <div class="panel-heading">{{$index + 1}}. {{scene.sname}}</div>
