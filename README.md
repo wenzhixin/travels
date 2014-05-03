@@ -1,4 +1,4 @@
-my-travel
+travel
 =========
 
-玩
+[游玩](http://wenzhixin.net.cn/travel/)
