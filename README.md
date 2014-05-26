@@ -1,4 +1,4 @@
-travel
+travels
 =========
 
-[游玩](http://wenzhixin.net.cn/travel/)
+[游遍广州](http://travels.wenzhixin.net.cn/)
