@@ -9,7 +9,7 @@ var fs = require('fs'),
     scraper = require('scraper'),
     ProgressBar = require('progress'),
 
-    PAGE_NUMBER = 5,
+    PAGE_NUMBER = 10,
     BASE_URL = 'http://lvyou.baidu.com/',
     LIST_URL = BASE_URL + 'destination/ajax/webapp/allview?sid=da666bc57594baeb76b3bcf0&rn=20&pn=',
     INTRO_URL = '/jianjie?pu=sz@1501_1004&amp;from=&amp;uid=&amp;ssid=&amp;bd_page_type=1&amp;device_os_id=2',

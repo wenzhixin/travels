@@ -2,17 +2,31 @@
 
 var controllers = angular.module('controllers', []);
 
-controllers.controller('ListCtrl', ['$scope', '$rootScope', '$window',
-    function ($scope, $rootScope, $window) {
+controllers.controller('ListCtrl', ['$scope', '$rootScope', '$window', '$timeout',
+    function ($scope, $rootScope, $window, $timeout) {
         $scope.scenes = $rootScope.senes;
 
-        var count = 0;
-        for (var i = 0; i < $scope.scenes.length; i++) {
-            if ($scope.scenes[i].been) {
-                count++;
+        $scope.doFilter = function(type) {
+            $scope.type = type;
+        };
+
+        var counter = function() {
+            var count = 0;
+            for (var i = 0; i < $scope.scenes.length; i++) {
+                if ($scope.scenes[i].been) {
+                    count++;
+                } else {
+                    $scope.scenes[i].been = false;
+                }
             }
-        }
-        $scope.count = count;
+            $scope.count = count;
+
+            if (!$scope.count) {
+                $timeout(counter, 500);
+            }
+        };
+
+        counter();
     }
 ]);
 

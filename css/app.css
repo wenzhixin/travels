@@ -22,11 +22,11 @@
 .list .panel-body {
 }
 
-a {
+.list a {
     color: #333;
 }
 
-a:hover {
+.list a:hover {
     color: #333;
     text-decoration: none;
 }
