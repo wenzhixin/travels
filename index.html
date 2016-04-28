@@ -11,12 +11,31 @@
 
 <div ng-view autoscroll></div>
 
+<!-- Modal -->
+<div class="modal fade" id="this-info" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4 class="modal-title" id="myModalLabel">游遍广州项目信息</h4>
+            </div>
+            <div class="modal-body">
+                <ol>
+                    <li>本项目由 angularjs 实现。</li>
+                    <li>Github 地址：<a href="https://github.com/wenzhixin/travels">wenzhixin/travels</a>。</li>
+                </ol>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 <script src="lib/angular/angular.js"></script>
 <script src="lib/angular/angular-route.js"></script>
 <script src="lib/angular/angular-sanitize.js"></script>
 <script src="lib/angular/angular-resource.js"></script>
 <script src="lib/jquery.min.js"></script>
 <script src="lib/store.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.js"></script>
 <script src="js/app.js"></script>
 <script src="js/controllers.js"></script>
 <script src="js/services.js"></script>
